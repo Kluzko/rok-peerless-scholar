@@ -1,0 +1,61 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Dependencies
+node_modules/
+.pnpm-store/
+.npm/
+
+# Frontend build output
+dist/
+dist-ssr/
+frontend/dist/
+frontend/dist-ssr/
+frontend/build/
+build/
+frontend/.next/
+.next/
+frontend/out/
+out/
+*.tsbuildinfo
+*.local
+
+# Rust/Cargo
+backend/target/
+backend/Cargo.lock
+backend/debug/
+backend/release/
+backend/**/*.rs.bk
+backend/.cargo-ok
+
+# IDE and editor files
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.swp
+*.swo
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Testing
+coverage/
+.nyc_output/
+
+# Temporary files
+tmp/
+temp/

@@ -1,0 +1,16 @@
+{
+  "name": "rok-peerless-scholar",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start:backend": "cd backend && cargo run",
+    "start:frontend": "cd frontend && pnpm run dev",
+    "dev": "concurrently \"pnpm run start:backend\" \"pnpm run start:frontend\"",
+    "build:frontend": "cd frontend && pnpm run build",
+    "build:backend": "cd backend && cargo build --release",
+    "build": "pnpm run build:frontend && pnpm run build:backend"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
